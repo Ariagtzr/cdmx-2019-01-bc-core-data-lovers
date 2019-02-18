@@ -7,7 +7,7 @@ const dataYear = document.getElementById("data-year");
 let dataFilter = {}
 
 //Constante para cachar el evento y puntualizar mediante id, el resultado de la función
-const buttonClick = () => { 
+const buttonClick = () => {
   let countries = event.target.id;
   let result = window.WorldBank.dataCountries(dataWorldbank, countries);
   printOption(result);
@@ -24,7 +24,7 @@ const printOption = (result) => { // Filtrar los indicadores del select por pala
     let printIndicatorName = indicator.indicatorName;
     let education = /educación/i; // Se usa la expresión regular -educación- para incorporar los indicadores al select
     let matchs = printIndicatorName.match(education);
-    if (matchs !== null) {  // Retirar indicadores con valores vacíos
+    if (matchs !== null) { // Retirar indicadores con valores vacíos
       let indicatorOption = `<option value="${printIndicatorName}" >${printIndicatorName}</option>`;
       selectIndicator.insertAdjacentHTML("beforeend", indicatorOption);
       return matchs
@@ -33,14 +33,14 @@ const printOption = (result) => { // Filtrar los indicadores del select por pala
 
 }
 
-const printYears = (resultYear) => {  // Imprimir los datos(año-porcentaje) del indicador-original-prueba
+const printYears = (resultYear) => { // Imprimir los datos(año-porcentaje) del indicador-original-prueba
   dataYear.innerHTML = "";
   for (const key in resultYear) {
     if (resultYear.hasOwnProperty(key)) {
       let element = resultYear[key];
       const year = key;
       if (element !== "") {
-        let indicatorDataYear = `<p>Año: <span>${year}   </span> <span>${parseFloat(element).toFixed(2)}%</span></p>`
+        let indicatorDataYear = `<p> <span>${year}</span>----------<span>${parseFloat(element).toFixed(2)}%</span></p>`
         dataYear.insertAdjacentHTML("beforeend", indicatorDataYear);
       }
 
@@ -54,19 +54,19 @@ const sortByPercent = () => {
   let resultYear = window.WorldBank.percentAndYear(dataFilter, matchYear);
   printYears(resultYear);
   let arrResultYear = [];
-    sortSelect.addEventListener('change', () => {
-      let sortValue = sortSelect.value;
-      for (let key in resultYear) {
-        if (resultYear.hasOwnProperty(key)) {
-          arrResultYear.push([key, resultYear[key]]);
-        }
+  sortSelect.addEventListener('change', () => {
+    let sortValue = sortSelect.value;
+    for (let key in resultYear) {
+      if (resultYear.hasOwnProperty(key)) {
+        arrResultYear.push([key, resultYear[key]]);
       }
-      let sortFinal = window.WorldBank.sortPercentAndYear(arrResultYear, sortValue);
-      arrResultYear = new Object()
-      sortFinal.forEach(element=> {
-        let percent=  element[1];
-        let year = element[0];
-       arrResultYear[percent]  = year;
+    }
+    let sortFinal = window.WorldBank.sortPercentAndYear(arrResultYear, sortValue);
+    arrResultYear = new Object()
+    sortFinal.forEach(element => {
+      let percent = element[1];
+      let year = element[0];
+      arrResultYear[percent] = year;
     })
     printPercents(arrResultYear);
   })
@@ -87,7 +87,4 @@ const printPercents = (resultYear) => {
   }
 }
 
-selectIndicator.addEventListener("change", sortByPercent); 
-
-
-
+selectIndicator.addEventListener("change", sortByPercent);
