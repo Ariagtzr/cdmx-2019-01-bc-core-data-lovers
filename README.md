@@ -1,60 +1,120 @@
-# [Start Bootstrap - Full Width Pics](https://startbootstrap.com/template-overviews/full-width-pics/)
+[![logo](https://i.ibb.co/dcmwHSb/light-bulb-2.png)]
 
-[Full Width Pics](http://startbootstrap.com/template-overviews/full-width-pics/) is an HTML starter template for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). This template features numerous full width background image content sections.
+# LatinoEduca
 
-## Preview
+## Índice
 
-[![Full Width Pics Preview](https://startbootstrap.com/assets/img/templates/full-width-pics.jpg)](https://blackrockdigital.github.io/startbootstrap-full-width-pics/)
+- [Descripción](#resumen-del-proyecto)
+- [Problema](#problema)
+- [Consideraciones Técnicas](#Consideraciones-técnicas)
+- [Proceso de diseño](#historias-de-usuario)
+- [Diseño de interfaz](#prototipado)
+- [Qué dicen los usuarios] (#que-dicen-los-usuarios)
+- [Construido con](#construido-con)
+- [Contribuyendo](#contribuyendo)
+- [Agradecimientos](#agradecimientos)
 
-**[View Live Preview](https://blackrockdigital.github.io/startbootstrap-full-width-pics/)**
 
-## Status
+---
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/BlackrockDigital/startbootstrap-full-width-pics/master/LICENSE)
-[![npm version](https://img.shields.io/npm/v/startbootstrap-full-width-pics.svg)](https://www.npmjs.com/package/startbootstrap-full-width-pics)
-[![Build Status](https://travis-ci.org/BlackrockDigital/startbootstrap-full-width-pics.svg?branch=master)](https://travis-ci.org/BlackrockDigital/startbootstrap-full-width-pics)
-[![dependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-full-width-pics/status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-full-width-pics)
-[![devDependencies Status](https://david-dm.org/BlackrockDigital/startbootstrap-full-width-pics/dev-status.svg)](https://david-dm.org/BlackrockDigital/startbootstrap-full-width-pics?type=dev)
 
-## Download and Installation
+## Resumen del proyecto 🚀
 
-To begin using this template, choose one of the following options to get started:
-* [Download the latest release on Start Bootstrap](https://startbootstrap.com/template-overviews/full-width-pics/)
-* Install via npm: `npm i startbootstrap-full-width-pics`
-* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-full-width-pics.git`
-* [Fork, Clone, or Download on GitHub](https://github.com/BlackrockDigital/startbootstrap-full-width-pics)
+El proyecto LatinoEduca se crea con el objetivo de que el gremio de investigadores utilicen los datos obtenidos en lista, información que pueda ser relevante y genere propuestas hacia la mejora continua de la educación en Latinoamérica. Creamos una app que integre información de confianza ya que son datos del Banco Mundial,que especificamente se centran en indicadores de educación en los países México, Chile, Brasil y Perú.
 
-## Usage
+## Problema  
+Nos enfocamos en un problema que se vive en todas las carreras o sectores, que es el encontrar documentación que tenga fuentes fidedignas y que informe de países que se encuentran en Latinoamérica, seleccionando sólo a mujeres en la educación.Esto con el fin de que nuestro usuario pueda recabar información que le sirva para dar propuesras a las problemáticas educativas dentro de los países que seleccione y que tenga una visión precisa de la realidad.
 
-### Basic Usage
+## Consideraciones técnicas 📋
+* [Bootstrap](https://getbootstrap.com/docs/4.2/getting-started/download/) - El framework web usado
 
-After downloading, simply edit the HTML and CSS files included with the template in your favorite text editor to make changes. These are the only files you need to worry about, you can ignore everything else! To preview the changes you make to the code, you can open the `index.html` file in your web browser.
+Para tener acceso a este proyecto deberás seguir los siguientes pasos:
 
-### Advanced Usage
+1.-Antes que nada, asegúrate de tener un 📝 editor de texto en condiciones, algo como Atom o Code.
+2.-Para ejecutar los comandos a continuación necesitarás una 🐚 UNIX Shell, que es un programita que interpreta líneas de comando (command-line interpreter) así como tener git instalado. Si usas un sistema operativo "UNIX-like", como GNU/Linux o MacOS, ya tienes una shell (terminal) instalada por defecto (y probablemente git también). Si usas Windows puedes usar Git bash, aunque recomendaría que consideres probar 🐧 GNU/Linux.
+3.-Haz tu propio 🍴 fork del repo de tu cohort.
+4.-⬇️ Clona tu fork a tu computadora (copia local).
+5.-📦 Instala las dependencias del proyecto con el comando npm install. Esto asume que has instalado Node.js (que incluye npm).
+6.-Si todo ha ido bien, deberías poder ejecutar las 🚥 pruebas unitarias (unit tests) con el comando npm test.
+7.-A codear se ha dicho! 🚀
 
-After installation, run `npm install` and then run `gulp dev` which will open up a preview of the template in your default browser, watch for changes to core template files, and live reload the browser when changes are saved. You can view the `gulpfile.js` to see which tasks are included with the dev environment.
+## Historias de usuario
+-El colectivo de investigación busca conocer los indicadores de alfabetismo en LatinoAmérica (mujeres) para conocer su comportamiento por año.
 
-You must have npm and Gulp installed globally on your machine in order to use these features.
 
-## Bugs and Issues
+### Diseño de la Interfaz de Usuario
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-full-width-pics/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/full-width-pics/).
+#### Prototipo de baja fidelidad
 
-## About
+El proyecto se da inicio con un sketch a mano alzada que crea una interfaz sencilla para iniciar.
 
-Start Bootstrap is an open source library of free Bootstrap templates and themes. All of the free templates and themes on Start Bootstrap are released under the MIT license, which means you can use them for any purpose, even for commercial projects.
+![marvel](https://i.ibb.co/b2sndrk/Imagen-de-i-OS-1.jpg)
+![marvel](https://i.ibb.co/RbY4j0r/Imagen-de-i-OS-2.jpg)
+![marvel](https://i.ibb.co/JF8nTdL/Imagen-de-i-OS.jpg)
 
-* https://startbootstrap.com
-* https://twitter.com/SBootstrap
+#### Prototipo de alta fidelidad
 
-Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
+En nuestra sección de prototipado de alta fidelidad utilizamos Figma esta herramienta era muy sencilla de utilizar e hicimos lo que podría ser un acercamiento a lo que requeriamos en nuestra html, sin embargo optamos por utilizar bootstrap que nos facilito el diseño que no era responsive como queríamos.
 
-* http://davidmiller.io
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
+![Figma](https://i.ibb.co/yVq1LdK/fig1.jpg)
+![Figma](https://i.ibb.co/hmv8PRk/fig2.jpg)
+![Figma](https://i.ibb.co/SJZWb4T/fig3.jpg)
 
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
 
-## Copyright and License
+#### Testeos de usabilidad
 
-Copyright 2013-2019 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-full-width-pics/blob/gh-pages/LICENSE) license.
+Durante la producción del proyecto se intento lanzar encuestas a los candidatos más idoneos para la resolución de algunas incognitas que teníamos 
+
+### Implementación de la Interfaz de Usuario (HTML/CSS/JS)
+
+Luego de diseñar tu interfaz de usuario deberás trabajar en su implementación.
+Como mencionamos, **no** es necesario que construyas la interfaz tal como la
+diseñaste. Tendrás un tiempo limitado para hackear, así es que deberás
+priorizar.
+
+Como mínimo, tu implementación debe:
+
+1. Mostrar la data en una interfaz: puede ser un card, una tabla, una lista, etc.
+2. Permitir al usuario filtrar y ordenar la data.
+3. Calcular estadísticas de la colección (o subcolección) como media aritmética,
+   máximo y/o mínimo de algún atributo numérico, o contar cuántas veces aparece
+   un determinado valor, por ejemplo.
+4. Visualizarse sin problemas desde distintos tamaños de pantallas: móviles,
+   tablets y desktops.
+
+Es importante que tu interfaz, a pesar de ser una versión mínima de tu ideal,
+siga los fundamentos de _visual design_.
+
+### Pruebas unitarias
+
+El _boilerplate_ de este proyecto no incluye pruebas unitarias, pero esperamos
+que escribas tus propias pruebas unitarias para las funciones encargadas de
+_procesar_, _filtrar_ y _ordenar_ la data, así como _calcular_ estadísticas.
+Para ello te recomendamos implementar las siguientes funciones en el archivo
+`src/data.js`:
+
+- `filterData(data, condition)`: esta función `filter` o filtrar recibiría la
+  data, y nos retornaría aquellos datos que sí cumplan con la condición.
+
+- `sortData(data, sortBy, sortOrder)`: esta función `sort` u ordenar
+  recibe tres parámetros.
+  El primer parámetro, `data`, nos entrega los datos.
+  El segundo parámetro, `sortBy`, nos dice con respecto a cuál de los campos de
+  la data se quiere ordenar.
+  El tercer parámetro, `sortOrder`, indica si se quiere ordenar de manera
+  ascendente o descendente.
+
+- `computeStats(data)`: la función `compute` o calcular, nos permitirá hacer
+  cálculos estadísticos básicos para ser mostrados de acuerdo a la data
+  proporcionada.
+
+Estas son propuestas de funciones que podrías implementar.
+
+El archivo `src/data.js` debe tener una cobertura del 70% de _statements_
+(_sentencias_), _functions_ (_funciones_), _lines_ (_líneas_), y _branches_
+(_ramas_).
+
+**Estas funciones deben ser [_puras_](https://medium.com/laboratoria-developers/introducci%C3%B3n-a-la-programaci%C3%B3n-funcional-en-javascript-parte-2-funciones-puras-b99e08c2895d)
+e independientes del DOM**. Estas funciones serán después usadas desde el archivo
+`src/main.js`, al cargar la página, y cada vez que el usuario interactúe (click,
+filtrado, ordenado, ...).
