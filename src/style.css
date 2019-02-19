@@ -69,9 +69,6 @@ fieldset:disabled a.btn {
   font-display: hidden;
 }
 
-.container {
-  margin-top: 3em;
-}
 
 h1,
 .h2,
@@ -92,29 +89,23 @@ h6 {
   color: inherit;
 }
 
-.lead {
-  margin-bottom: 4rem;
+#what {
   font-family: inherit;
-  font-weight: 600;
-  line-height: 1.2;
-  color: #111116;
+  color: #212529;
+  font-size: 3em;
 }
 
-.circle {
-  margin-bottom: 4rem;
+#list {
   font-family: inherit;
-  font-weight: 800;
-  line-height: 1.2;
-  color: #111116;
-  font-size: 3rem;
-  border: 1px solid transparent;
-  padding: 0.10rem 0.80rem;
-  font-size: 2rem;
-  line-height: 1.7;
-  border-radius: 0.30rem;
-  transition: color 0.15s ease-in-out,
-    background-color 0.15s ease-in-out,
-    border-color 0.15s ease-in-out,
-    box-shadow 0.15s ease-in-out;
+  color: #0069d9;
+  font-size: 2em;
+  align-items: baseline;
+}
+
+#app {
+  font-family: inherit;
+  color: #212529;
+  font-size: 3em;
+
 
 }
