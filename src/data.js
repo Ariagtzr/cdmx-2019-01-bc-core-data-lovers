@@ -14,13 +14,16 @@ window.WorldBank = {
     });
     return newData
   },
-  sortPercentAndYear: (arrResultYear, sortValue) => { //Funcion para ordenar.
-    if (sortValue === "upward") {
-      arrResultYear.sort((a, b) => a[1] - b[1]);
-    } else if (sortValue === "falling") {
-      arrResultYear.sort((a, b) => (b[1] - a[1]));
+  sortPercentAndYear: (objOrder, sortValue) => {
+    let newArrResultYear = []; // var vacía para almacenar nuevo array que estaba en un obj
+    for (let key in objOrder) { //iterar sus llaves en el obj
+      newArrResultYear.push([key, objOrder[key]]); //relleno el array
     }
-    return arrResultYear
-
+    if (sortValue === "upward") { //inf que da el select sortvalue
+      newArrResultYear.sort((a, b) => a[1] - b[1]); //compara elementos a[1] y b[1] ascendente por primera posicion.
+    } else if (sortValue === "falling") { //lo mismo para elementos descendentes.
+      newArrResultYear.sort((a, b) => (b[1] - a[1])); //compara elementos b[1] y a[1]
+    }
+    return newArrResultYear // regresa el nuevo array con ele asc y desc
   }
 };
