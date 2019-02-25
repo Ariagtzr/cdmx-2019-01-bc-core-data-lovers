@@ -1,13 +1,13 @@
 var WORLDBANK; //variable que nos permite validar el test 
 const dataWorldbank = WORLDBANK; //variable que nos permite enlazar la data y utlizarla
-const buttonCountries = document.getElementsByClassName("btn");
+const buttonCountries = document.getElementsByClassName("btnCountry");
 const selectIndicator = document.getElementById("indicator");
 const dataYear = document.getElementById("data-year");
 const sortSelect = document.getElementById("sort");
 let resultYear = {}; //objeto con indicador filtro
 
 let dataFilter = {}
-let dataPromedy = {}
+
 
 //Constante para cachar el evento y puntualizar mediante id, el resultado de la función
 const buttonClick = () => {
@@ -64,7 +64,7 @@ const printPercents = (sortFinal) => {
   dataYear.innerHTML = " ";
   for (let value of sortFinal) {
     if (value[1] !== "") {
-      let indicatorDataYear = `<p><span>${value[0]}   </span> <span>${parseFloat(value[1]).toFixed(2)}%</span></p>`
+      let indicatorDataYear = `<p><span>${value[0]}   </span>------------ <span>${parseFloat(value[1]).toFixed(2)}%</span></p>`
       dataYear.insertAdjacentHTML("beforeend", indicatorDataYear)
     }
   }

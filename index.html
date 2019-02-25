@@ -101,17 +101,17 @@
       <!--bottons-->
       <div class="row">
         <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-          <button class="btn btn-primary btn-sm" id="PER">Perú</button>
+          <button class="btnCountry btn-primary btn-sm" id="PER">Perú</button>
         </div>
         <div class="clearfix-sm-block"></div>
         <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-          <button class="btn btn-primary btn-sm" id="MEX">México</button>
+          <button class="btnCountry btn-primary btn-sm" id="MEX">México</button>
         </div>
         <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-          <button class="btn btn-primary btn-sm" id="BRA">Brasil</button>
+          <button class="btnCountry btn-primary btn-sm" id="BRA">Brasil</button>
         </div>
         <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-          <button class="btn btn-primary btn-sm" id="CHL">Chile</button>
+          <button class="btnCountry btn-primary btn-sm" id="CHL">Chile</button>
         </div>
       </div>
   </section>
@@ -120,7 +120,8 @@
   <section>
 
     <article class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
-      <fieldset>
+      <fieldset class="fieldset">
+        <legend> Elige algún indicador: </legend>
         <select name="indicators-by-country" id="indicator">
           <option class="list-group-item-light" value="indicators-country" disabled selected>Indicador</option>
         </select>
@@ -139,12 +140,12 @@
     <article class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
       <div class="table">
         <div class="table reposponsive">
-          <h5 id="data-year"></h5>
-          <tr>
-            <td>
+          <tr>Año</tr>
+          <tr> <span></span> Porcentaje</tr>
+          <td>
+            <form id="data-year"></form>
+          </td>
 
-            </td>
-          </tr>
         </div>
       </div>
     </article>

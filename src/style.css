@@ -1,4 +1,9 @@
-.btn {
+body {
+  background-color: rgba(64, 76, 110, 0.5);
+
+}
+
+.btnCountry {
   display: inline-block;
   font-weight: 400;
   color: white;
@@ -19,7 +24,7 @@
 
 
 .img-fluid bg-image-full {
-  width: 50%;
+  width: 100%;
   height: auto;
 }
 
@@ -31,7 +36,6 @@
 .py-5 bg-image-full {
   width: 100%;
   height: auto;
-  margin-top: 50%;
   image-rendering: optimizeQuality;
 }
 
@@ -41,32 +45,32 @@
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-  .btn {
+  .btnCountry {
     transition: none;
   }
 }
 
-.btn:hover {
+.btnCountry:hover {
   color: #212529;
   text-decoration: none;
 }
 
-.btn:focus,
-.btn.focus {
+.btnCountry:focus,
+.btnCountry.focus {
   outline: 0;
   box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
 
-.btn.disabled,
-.btn:disabled {
+.btnCountry.disabled,
+.btnCountry:disabled {
   opacity: 0.65;
 }
 
-.btn:not(:disabled):not(.disabled) {
+.btnCountry:not(:disabled):not(.disabled) {
   cursor: pointer;
 }
 
-a.btn.disabled,
+a.btnCountry.disabled,
 fieldset:disabled a.btn {
   pointer-events: none;
 }
@@ -124,16 +128,17 @@ h6 {
   border-top: 1px solid #dee2e6;
 }
 
-.table thead th {
-  id #dee2e6;
-}
 
 .table tbody+tbody {
   border-top: 2px solid #dee2e6;
 }
 
 .table .table {
-  background-color: #fff;
+  background-color: #0069d9;
+  opacity: 0.5;
+  color: white;
+  border-radius: 0.25rem;
+
 }
 
 .table-sm th,
@@ -245,7 +250,7 @@ h6 {
   margin-bottom: 0;
   list-style: none;
   background-color: #0019FF;
-  font-size: 120%;
+  font-size: 100%;
 
 }
 
@@ -630,4 +635,12 @@ h6 {
 .navbar-dark .navbar-text a:hover,
 .navbar-dark .navbar-text a:focus {
   color: #fff;
+}
+
+fieldset {
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+
 }
