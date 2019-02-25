@@ -6,9 +6,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="LatinoEduca" content="indicadores educativos">
-  <meta name="author" content="">
+  <link rel="shortcut icon" href="src/imagen/feminist.png" />
 
-  <title>LatinoEduca</title>
+  <title>LxtinoaméricaPiensa</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -24,7 +24,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">LatinoEduca</a>
+      <a class="navbar-brand" href="#what"> <img src="src/imagen/feminist.png"> LxPiensa</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
         aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -32,18 +32,18 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">¿Qué es LatinoEduca?
+            <a class="nav-link" href="#what">¿Qué es LxPiensa?
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Noticias</a>
+            <a class="nav-link" href="#carouselExampleIndicators">Noticias</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">País e Indicador</a>
+            <a class="nav-link" href="#inf">País e Indicador</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Información</a>
+            <a class="nav-link" href="#sobre">Información</a>
           </li>
         </ul>
       </div>
@@ -52,7 +52,7 @@
 
   <!-- Header - set the background image for the header in the line below -->
 
-  <header class="py-5 bg-image-full" style="background-image: url('https://i.ibb.co/bmjy3px/manzana1.jpg');">
+  <header id="backimag" class="py-5 bg-image-full" style="background-image: url('https://i.ibb.co/MSsqDdZ/girl-2696947-1920-1200x520.jpg');">
     <img class="img-fluid bg-image-full" src="https://i.ibb.co/zGPn6xL/indicadores-educativos-en-latinoam-ric-A-4.png"
       alt="logo">
 
@@ -61,22 +61,10 @@
   <!-- Content section -->
   <section class="py-5">
     <div class="container">
-      <h1 id="what">¿Qué es LatinoEduca?</h1>
-      <p id="app" class="lead">Esta app te podrá ayudar a:</p>
-      <ul>
-        <li id="list" type="circle">Encontrar datos específicos acerca del nivel Educativo en Latinoamérica.</li>
-        <li id="list" type="circle">La información recopilada te ayudará a distinguir el comportamiento de la
-          educación a
-          través de los año.</li>
-        <li id="list" type="circle">La fuente de la base de datos es el Banco Mundial</li>
-      </ul>
+      <img id="what" src="src/imagen/inf.png" class="content">
     </div>
   </section>
 
-  
-    <!-- Put anything you want here! There is just a spacer below for demo purposes! -->
-    <div style="height: 200px;"></div>
-  </section>
   <!-- Carousel -->
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
@@ -108,51 +96,56 @@
   <!-- Content section -->
   <section class="py-5">
     <div class="container">
-      <h1>Datos</h1>
-      <h4 class="lead-container">1. Inicia eligiendo un país</h4>
-      <!-------bottons----->
+      <img id="inf" class="data" src="src/imagen/inst.png" alt="inst">
+
+      <!--bottons-->
       <div class="row">
         <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-          <button class="btnCountry" id="PER">Perú</button>
+          <button class="btnCountry btn-primary btn-sm" id="PER">Perú</button>
         </div>
         <div class="clearfix-sm-block"></div>
         <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-          <button class="btnCountry" id="MEX">México</button>
+          <button class="btnCountry btn-primary btn-sm" id="MEX">México</button>
         </div>
         <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-          <button class="btnCountry" id="BRA">Brasil</button>
+          <button class="btnCountry btn-primary btn-sm" id="BRA">Brasil</button>
         </div>
         <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-          <button class="btnCountry" id="CHL">Chile</button>
+          <button class="btnCountry btn-primary btn-sm" id="CHL">Chile</button>
         </div>
       </div>
   </section>
 
   <!-- Indicadores -->
   <section>
-    <h4 class="container">2. Selecciona un Indicador</h4>
+
     <article class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
-      <fieldset>
+      <fieldset class="fieldset">
+        <legend> Elige algún indicador: </legend>
         <select name="indicators-by-country" id="indicator">
           <option class="list-group-item-light" value="indicators-country" disabled selected>Indicador</option>
         </select>
       </fieldset>
       <fieldset>
-        <h4 class="container">3. Ordena de mayor a menor</h4><select name="sort-by-year" id="sort">
+        <select name="sort-by-year" id="sort">
           <option class="opt" id="upward" value="upward">Ascendente</option>
           <option class="opt" id="falling" value="falling">Descendente</option>
         </select>
-      </fieldset>
+        </fieldse>
     </article>
+
   </section>
-  <!-----Datos------>
+  <!--Datos-->
   <section>
     <article class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
-      <h3>Datos</h3>
-      <div class="card">
-        <div class="card-body">
-          <h5 class="card-title">Año---------- Porcentaje</h5>
-          <h5 id="data-year"></h5>
+      <div class="table">
+        <div class="table reposponsive">
+          <tr>Año</tr>
+          <tr> <span></span> Porcentaje</tr>
+          <td>
+            <form id="data-year"></form>
+          </td>
+
         </div>
       </div>
     </article>
@@ -161,7 +154,7 @@
   <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; LatinoEduca 2019</p>
+      <p id="sobre" class="m-0 text-center text-white">Copyright &copy; LxPiensa 2019</p>
     </div>
     <!-- /.container -->
   </footer>
@@ -169,10 +162,6 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="./data/worldbank/worldbank.js"></script>
-  <script src="data.js"></script>
-  <script src="main.js"></script>
-
   <script src="src/data/worldbank/worldbank.js"></script>
   <script src="src/data.js"></script>
   <script src="src/main.js"></script>
