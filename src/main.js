@@ -1,6 +1,6 @@
 var WORLDBANK; //variable que nos permite validar el test 
 const dataWorldbank = WORLDBANK; //variable que nos permite enlazar la data y utlizarla
-const buttonCountries = document.getElementsByClassName("btnCountry");
+const buttonCountries = document.getElementsByClassName("btn");
 const selectIndicator = document.getElementById("indicator");
 const dataYear = document.getElementById("data-year");
 const sortSelect = document.getElementById("sort");
