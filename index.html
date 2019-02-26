@@ -99,29 +99,35 @@
       <img id="inf" class="data" src="src/imagen/inst.png" alt="inst">
 
       <!--bottons-->
+
       <div class="row">
-        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-          <button class="btnCountry btn-primary btn-sm" id="PER">Perú</button>
+        <div class="col-md-6">
+          <button class="btnCountry" id="PER" style="width: 100%;">
+            <img src="src/imagen/peru.png" width="100" />
+          </button>
         </div>
-        <div class="clearfix-sm-block"></div>
-        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-          <button class="btnCountry btn-primary btn-sm" id="MEX">México</button>
+        <div class="col-md-6">
+          <button class="btnCountry" id="MEX" style="width: 100%;">
+            <img src="src/imagen/mex.png" width="100" />
+          </button>
         </div>
-        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-          <button class="btnCountry btn-primary btn-sm" id="BRA">Brasil</button>
+        <div class="col-md-6">
+          <button class="btnCountry" id="BRA" style="width: 100%;">
+            <img src="src/imagen/brazil.png" width="100" />
+          </button>
         </div>
-        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
-          <button class="btnCountry btn-primary btn-sm" id="CHL">Chile</button>
+        <div class="col-md-6">
+          <button class="btnCountry" id="CHL" style="width: 100%;">
+            <img src="src/imagen/chile.png" width="100" />
+          </button>
         </div>
       </div>
-  </section>
+    </div>
 
-  <!-- Indicadores -->
-  <section>
-
-    <article class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
-      <fieldset class="fieldset">
-        <legend> Elige algún indicador: </legend>
+    <!-- Indicadores -->
+    <section style="margin: 10px;">
+      <fieldset style="min-height:100px;">
+        <legend><b> Elige algún indicador</b> </legend>
         <select name="indicators-by-country" id="indicator">
           <option class="list-group-item-light" value="indicators-country" disabled selected>Indicador</option>
         </select>
@@ -132,39 +138,43 @@
           <option class="opt" id="falling" value="falling">Descendente</option>
         </select>
         </fieldse>
-    </article>
+        </article>
 
-  </section>
-  <!--Datos-->
-  <section>
-    <article class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
-      <div class="table">
-        <div class="table reposponsive">
-          <tr>Año</tr>
-          <tr> <span></span> Porcentaje</tr>
-          <td>
-            <form id="data-year"></form>
-          </td>
+    </section>
+    <!--Datos-->
+    <section>
+      <article class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+        <div class="table">
+          <div class="table reposponsive">
+            <tr>Año</tr>
+            <tr> <span></span> Porcentaje</tr>
+            <td>
+              <form id="data-year"></form>
+            </td>
 
+          </div>
         </div>
+      </article>
+    </section>
+    <section class="py-5">
+      <div class="container">
+        <img id="sobre" src="src/imagen/bmundial.png" class="content">
       </div>
-    </article>
-  </section>
+    </section>
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p id="sobre" class="m-0 text-center text-white">Copyright &copy; LxPiensa 2019</p>
+      </div>
+      <!-- /.container -->
+    </footer>
 
-  <!-- Footer -->
-  <footer class="py-5 bg-dark">
-    <div class="container">
-      <p id="sobre" class="m-0 text-center text-white">Copyright &copy; LxPiensa 2019</p>
-    </div>
-    <!-- /.container -->
-  </footer>
-
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="src/data/worldbank/worldbank.js"></script>
-  <script src="src/data.js"></script>
-  <script src="src/main.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="src/data/worldbank/worldbank.js"></script>
+    <script src="src/data.js"></script>
+    <script src="src/main.js"></script>
 
 
 </body>
